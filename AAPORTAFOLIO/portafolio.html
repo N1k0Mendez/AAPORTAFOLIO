@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Title" content="Portfolio of Nicolas Marcelo Mendez Cervetto">
+    <meta name="Description" content="Portafolio propio...">
+    <meta name="author" content="Nicolas Mendez">
+    <meta name="keywords" content="Portafiolio, Personal, Trabajo, Desarrollo, Web">
+    <meta name="og:title" content="Portafolio Nicolas Mendez">
+    <meta name="og:description" content="Portafolio del primer trabajo como estudiante en UTN">
+    <meta name="og:link" content="link directo">
+    <meta name="og:image" content="Agregar Icono">
+    <title>Portfolio</title>
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="/AAPORTAFOLIO/portafoliostyle/style.css">
+</head>
+<body>
+
+  <header>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+    <nav>
+       <ul>
+        <li><a href="#secone">HOME</a></li>
+        <li><a href="#sectwo">ABOUT</a></li>
+        <li><a href="#secthree">PORTFOLIO</a></li>
+        <li><a href="#secfour">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="secone">
+      <div id="title">
+          <h1>Hello! I´m <span>Nicolas Mendez Cervetto</span></h1>
+          <small>I´m a full-stack web developer</small>
+      </div>
+      <a href="#secthree">View my works <i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+    <section id="sectwo" class="paddingcustom">
+      <div id="moove-h2">
+      <h2>About Me</h2>
+      </div>
+      <div id="box">
+        <div  class="about">
+          <i class="fa-solid fa-users fa-3x"></i>
+          <h5>Job Team? <br> No Problem!</h5>
+        </div>
+        <div class="about">
+          <i class="fa-solid fa-business-time fa-3x"></i>
+          <h5>I work as a full-time developer</h5>
+        </div>
+        <div class="about">
+          <i class="fa-solid fa-toggle-on fa-3x"></i>
+          <h5>I am always available</h5>
+        </div>
+      </div>
+
+      <div id="boxtwo">
+        <div id="whobox">
+            <h3 class="title-sec">Description</h3>
+            <div id="textbox">
+          <img src="/AAPORTAFOLIO/imge/yofacha.jpg">
+              <div>
+                <h4>who am i?</h4>
+                <p id="description">Im 19 old.<br>Live in Argentina.<br>Learning to web developer.<br>
+                  <span>I like:</span>Programing<br>Games<br>Computers
+                </p>
+            </div>
+            </div>
+        </div>
+        <div id="gridmoves">
+          <h3 class="title-sec">My knowledge</h3>
+          <div id="gridbox">
+            <div class="element">
+              <i class="fa-brands fa-html5 fa-2x"></i>
+              <span class="sigo">HTML</span>
+            </div>
+            <div class="element">
+              <i class="fa-brands fa-css3-alt fa-2x"></i>
+              <span class="sigo">CSS</span>
+            </div>
+            <div class="element">
+              <i class="fa-brands fa-github fa-2x"></i>
+              <span class="sigo">GITHUB</span>
+            </div>
+            <div class="element">
+              <i class="fa-solid fa-hammer fa-2x"></i>
+              <span class="sigo">Next one is...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="secthree" class="paddingcustom">
+      <h2>Portfolio</h2>
+      <div>
+        <i class="fa-solid fa-briefcase fa-4x"></i>
+        I´m working on it!!
+      </div>
+    </section>
+  
+    <section id="secfour" class="paddingcustom">
+      <p>My Contact!</p>
+      <form>
+        <input type="text" placeholder="User name" name="input" required>
+        <input type="email" placeholder="Email" name="input" required>
+        <input id="Message" type="text" placeholder="Message" name="input" required>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <footer>
+      <p>© 2024 Nicolás Mendez Cervetto.</p>
+      <p>Contact: <br>
+        <div>
+          <a href="mailto:nicolas.mendez@example.com"><i class="fa-solid fa-envelope"></i>Gmail</a></p> 
+        </div>
+        <div>
+          <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github fa-2x"></i>Git</a>
+        </div>
+        <div>
+          <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i>Ig</a>
+        </div>
+      </p>
+      <p>“Gracias por visitar, ¡no te preocupes, no tengo un botón de salida!”</p>
+    </footer>
+  </main>
+</body>
+</html>
+
+<!--LA FORMA DE REALIZAR EL PADDING IN LINE, ES CREANDO UNA CLASE,
+DANDOSELA A TODOS LOS SECTION Y EN ESA CLASE INCLUIR LA CANTIDAD DE PADDING QUE UNO QUIERE
+
+html
+<section id="secthree" class="paddingline">
+
+css
+.paddingline{
+padding-inline:200px;
+}  
+
+FONTAWESOME
+
+para meta, poner una img fuera de la pag web, hay que poner las imagenes en 
+.ico, en vez de png. hay q transformar las imagenes usando una pagina/transformador
+
+@media (prefers.color-scheme){
+--primary:nuevo color para el scheme
+--secundary: nuevo secundary para el modo oscuro
+}
+
+SUBIR UN TXT/bloc de notas, GITHUB PUBLICO
+-->
