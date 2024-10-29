@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+ 
 }
 
 :root {
@@ -29,11 +30,13 @@
     --gap-5: 2rem;
     --gap-6: 2.5rem;
 }
-
+html, body {
+    scroll-behavior: smooth !important;
+}
 body {
     background-color: var(--background);
     color: var(--text-color);
-    scroll-behavior: smooth;
+    content-visibility:auto;
 }
 /* Variables para modo oscuro */
 @media (prefers-color-scheme: dark) {
@@ -265,7 +268,7 @@ h1{
     flex-direction: column;
 }
 #secthree div{
-    width: 400px;  
+    width:     400px;  
     height: 400px;
     border: 1px solid var(--terciario);
     display: flex;
@@ -314,6 +317,17 @@ input{
 input::placeholder {
     color: var(--terciario);
 }
+textarea {
+    border: 2px solid var(--terciario);
+    background-color: black;
+    color: var(--terciario);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+textarea::placeholder {
+    color: var(--terciario);
+}
 #Message{
     width:400px;
     height:100px;
@@ -321,7 +335,7 @@ input::placeholder {
 form button{
     margin: var(--gap-3);
     padding: var(--gap-1);
-    background-color: var(--);
+    background-color: var(--background);
     border-radius: 5px;
     border: 2px solid var(--terciario);
     background-color:black;
@@ -345,6 +359,13 @@ footer a{
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    color:var(--secundario);
+    text-decoration: none;
+}
+.footerul{
+    display: flex;
+    justify-content: center;
+    gap: 16px;  
 }
 /*-------------------------------------------------------*/
 /* - - CHANGES IN PX - - */
@@ -370,11 +391,21 @@ footer a{
         width: 100%;
         height:auto ;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
         gap: var(--gap-3);
         border-radius:var(--gap-3);
     }
+    .element span{
+        display: none;
+    }
 }
+@media(max-width:690px){
+    #gridbox{
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    }
+}
+
+/*-------------------------------------------------------*/
 /* MENU HAMBURGER */
 @media (max-width: 768px) {
     header nav {
